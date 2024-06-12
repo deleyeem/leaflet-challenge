@@ -10,7 +10,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     }).addTo(myMap);
 // Create function to determine marker size based on earthquake magnitude
 function markerSize(mag) {
-  // Earthquakes with missing magnitude will be plotted with a size of 1
+  // Set default size for missing magnitude
   let result = 1;
   if (mag) {
     result = Math.pow(mag, 2) * 5000;
@@ -19,7 +19,7 @@ function markerSize(mag) {
 }
 // Create function for colors
 function depthColor(depth) {
-  // Set default color
+  // Set default color for missing depth
   let color = '#CCFFCC';
   // Set colors based on depth
   if (depth >= 90) {
