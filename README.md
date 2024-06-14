@@ -36,4 +36,4 @@ Legend Creation: A custom legend was created using Leaflet's L.control method, s
 This project successfully demonstrates how to visualize real-time earthquake data using modern web technologies. By plotting earthquakes on an interactive map, the project provides a clear and informative way to understand seismic activity. The use of marker size and color to represent magnitude and depth makes the visualization intuitive and accessible. This tool can aid the USGS in educating the public and other stakeholders about earthquake activity, potentially securing more support for their important work.
 
 ## See Visual Sample
-
+![Figure 1: Screen shot of map.](Visualization_Sample.png)
