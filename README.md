@@ -17,13 +17,14 @@ Dataset Selection: For this project, the dataset representing "All Earthquakes f
 
 ### Data Visualization
 Map Creation: A basic map was created using Leaflet centered on a latitude and longitude that covers the area of interest.
-Tile layers from OpenStreetMap and CartoDB were used for the base map.
+Plotting Earthquakes: Earthquake data was plotted on the map using circle markers.
 
-Plotting Earthquakes:Earthquake data was plotted on the map using circle markers.
 Marker Size: The size of each marker was determined by the earthquake's magnitude. Larger magnitudes resulted in larger markers.
+
 Marker Color: The color of each marker was determined by the depth of the earthquake. Deeper earthquakes were represented with darker colors.
 
 Popups: Each marker was equipped with a popup that displayed additional information about the earthquake, including the location, time, magnitude, and depth.
+
 Legend: A legend was added to the map to provide context for the marker colors, indicating the depth range of the earthquakes.
 
 ### Implementation Details

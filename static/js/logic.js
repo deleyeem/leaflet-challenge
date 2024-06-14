@@ -17,11 +17,11 @@ function markerSize(mag) {
   }
   return result;
 }
-// Create function for colors
+// Create function for colors based on depths
 function depthColor(depth) {
-  // Set default color for missing depth
+  // Set default color if depth is missing
   let color = '#CCFFCC';
-  // Set colors based on depth
+  // Set colors for each parameter
   if (depth >= 90) {
     color = '#FFB3B3'
   } else if (depth >= 70){
@@ -72,7 +72,7 @@ d3.json(queryUrl).then(function(data) {
   legend.onAdd = function() {
     let div = L.DomUtil.create('div', 'info legend');
 
-    // Add style to the legend
+    // Customize legend box style
     div.style.backgroundColor = 'white';
     div.style.padding = '6px';
     div.style.border = '1px solid grey';
